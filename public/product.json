@@ -1,0 +1,122 @@
+[
+    {
+        "title": "Handmade Ceramic Vase",
+        "description": "A beautifully crafted ceramic vase perfect for home decor.",
+        "price": 45.99,
+        "product_id": 1
+    },
+    {
+        "title": "Artisan Clay Mug",
+        "description": "A unique clay mug made by local artisans.",
+        "price": 15.49,
+        "product_id": 2
+    },
+    {
+        "title": "Pottery Bowl Set",
+        "description": "Set of 4 handmade pottery bowls, perfect for serving.",
+        "price": 39.99,
+        "product_id": 3
+    },
+    {
+        "title": "Decorative Clay Plate",
+        "description": "A decorative plate made from high-quality clay.",
+        "price": 25.00,
+        "product_id": 4
+    },
+    {
+        "title": "Hand-painted Ceramic Pitcher",
+        "description": "A hand-painted pitcher made from durable ceramic.",
+        "price": 30.75,
+        "product_id": 5
+    },
+    {
+        "title": "Clay Flower Pot",
+        "description": "A stylish flower pot made of natural clay.",
+        "price": 20.50,
+        "product_id": 6
+    },
+    {
+        "title": "Ceramic Tea Set",
+        "description": "A beautifully designed ceramic tea set for tea lovers.",
+        "price": 55.00,
+        "product_id": 7
+    },
+    {
+        "title": "Handcrafted Clay Jar",
+        "description": "A handcrafted jar perfect for storing dry goods.",
+        "price": 18.99,
+        "product_id": 8
+    },
+    {
+        "title": "Decorative Ceramic Tile",
+        "description": "An artistic ceramic tile to enhance your home decor.",
+        "price": 12.49,
+        "product_id": 9
+    },
+    {
+        "title": "Clay Candle Holder",
+        "description": "A rustic clay candle holder for a cozy ambiance.",
+        "price": 10.00,
+        "product_id": 10
+    },
+    {
+        "title": "Ceramic Fruit Bowl",
+        "description": "A large ceramic bowl perfect for holding fruits.",
+        "price": 35.99,
+        "product_id": 11
+    },
+    {
+        "title": "Handmade Clay Pitcher",
+        "description": "A handcrafted clay pitcher for your kitchen.",
+        "price": 22.50,
+        "product_id": 12
+    },
+    {
+        "title": "Ceramic Coffee Mug Set",
+        "description": "Set of 6 ceramic coffee mugs with a unique design.",
+        "price": 60.00,
+        "product_id": 13
+    },
+    {
+        "title": "Clay Serving Platter",
+        "description": "A large clay platter for serving meals.",
+        "price": 28.75,
+        "product_id": 14
+    },
+    {
+        "title": "Decorative Ceramic Figurine",
+        "description": "A charming ceramic figurine to decorate your space.",
+        "price": 15.00,
+        "product_id": 15
+    },
+    {
+        "title": "Handcrafted Clay Bowl",
+        "description": "A beautifully handcrafted clay bowl for salads.",
+        "price": 27.50,
+        "product_id": 16
+    },
+    {
+        "title": "Ceramic Soap Dish",
+        "description": "A practical and stylish ceramic soap dish.",
+        "price": 9.99,
+        "product_id": 17
+    },
+    {
+        "title": "Clay Water Jug",
+        "description": "A traditional clay water jug with a lid.",
+        "price": 32.99,
+        "product_id": 18
+    },
+    {
+        "title": "Ceramic Spoon Rest",
+        "description": "A convenient ceramic rest for your cooking spoons.",
+        "price": 8.75,
+        "product_id": 19
+    },
+    {
+        "title": "Hand-painted Clay Plate Set",
+        "description": "Set of 4 hand-painted clay plates for dining.",
+        "price": 40.00,
+        "product_id": 20
+    }
+]
