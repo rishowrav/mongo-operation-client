@@ -1,38 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Card from "./components/Card";
-import axios from "axios";
-import useAxiosPublic from "./hooks/useAxiosPublic";
+
+import useProducts from "./hooks/useProducts";
 
 export default function App() {
   const [asc, setAsc] = useState(true);
-  const [product, setProduct] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [max, setMax] = useState(undefined);
   const [min, setMin] = useState(undefined);
   const [search, setSearch] = useState("");
-  const axiosPublic = useAxiosPublic();
-
-  useEffect(() => {
-    getProductData();
-  }, [asc, min, max, search]);
-
-  const getProductData = async () => {
-    await axiosPublic
-      .get(
-        `/products?sort=${
-          asc ? "asc" : "desc"
-        }&min=${min}&max=${max}&search=${search}`
-      )
-      .then((res) => {
-        setLoading(true);
-        setProduct(res.data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.log(err);
-        setLoading(false);
-      });
-  };
+  const [products, loading] = useProducts(asc, max, min, search);
 
   const handleMinMax = (e) => {
     e.preventDefault();
@@ -44,6 +20,8 @@ export default function App() {
     e.preventDefault();
     setSearch(e.target.search.value);
   };
+
+  console.log(products, loading);
 
   return (
     <div className="space-y-10 mt-10">
@@ -94,15 +72,16 @@ export default function App() {
       </div>
 
       {/*  all card */}
-      {loading ? (
-        <h1 className="text-center text-2xl">Loading...</h1>
-      ) : (
-        <div className="grid grid-cols-5 gap-2">
-          {product.map((data) => (
-            <Card key={data?.product_id} data={data} />
-          ))}
-        </div>
-      )}
+
+      <div className="grid grid-cols-5 gap-2">
+        {loading ? (
+          <h1 className="flex justify-center text-2xl">
+            <span>Loading...</span>
+          </h1>
+        ) : (
+          products.map((data) => <Card key={data?.product_id} data={data} />)
+        )}
+      </div>
     </div>
   );
 }
