@@ -73,7 +73,7 @@ export default function App() {
 
       {/*  all card */}
 
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-2">
         {loading ? (
           <h1 className="flex justify-center text-2xl">
             <span>Loading...</span>
